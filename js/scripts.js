@@ -11,9 +11,10 @@ var checkSize = function(q1,q2,q3) {
 };
 var preferLanguage;
 
+// User interface
 
 $(function() {
-  $("div.panel-body").hide();
+  $(".panel-body").hide();
   $(".panel-body:first").show();
   $(".nextbtn").click(function() {
     $(this).parent().hide();
@@ -29,7 +30,7 @@ $(function() {
     } else {
       var preferLanguage = $("input:radio[name=question5]:checked").val();
     }
-    alert(preferLanguage);
+    $("."+preferLanguage).show();
   });
 
 
