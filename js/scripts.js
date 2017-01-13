@@ -10,22 +10,32 @@ var checkSize = function(q1,q2,q3) {
   }
 };
 var preferLanguage;
+var activeQuestion =1;
+var nextQuestion = function() {
+  activeQuestion += 1;
+};
+var prevQuestion = function() {
+  activeQuestion -= 1;
+};
+
 
 // User interface
 
 $(function() {
   $(".panel-body").hide();
-  $(".panel-body:first").show();
+  $(".question"+activeQuestion).show();
   $(".nextbtn").hide();
   $("input:radio").click(function() {
-    $(this).parent().parent().siblings(".nextbtn").show();
+    $(this).parents().siblings(".nextbtn").show();
   });
   $(".nextbtn").click(function() {
-    $(this).parent().hide();
-    $(this).parent().next(".panel-body").show();
+    $(".question"+activeQuestion).hide();
+    nextQuestion();
+    $(".question"+activeQuestion).show();
   });
   $("form#quiz").submit(function(event) {
     event.preventDefault();
+    $("#displaypane").find(".panel-body").hide();
     var q1 = parseInt($("input:radio[name=question1]:checked").val());
     var q2 = parseInt($("input:radio[name=question2]:checked").val());
     var q3 = parseInt($("input:radio[name=question3]:checked").val());
@@ -36,7 +46,7 @@ $(function() {
     }
     $("."+preferLanguage).show();
   });
-
+// to add to submit: hide next button, add start over button
 
 
 

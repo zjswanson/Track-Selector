@@ -1,0 +1,14 @@
+.jumbotron {
+  background-color: rgba(0,179,180,.5);
+}
+
+.panel-default > .panel-heading {
+  background-color: rgba(0,179,180,.5);
+}
+
+body {
+  background-image: url(../img/portland.jpg);
+  background-size: height 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
