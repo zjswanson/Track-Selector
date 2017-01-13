@@ -16,6 +16,10 @@ var preferLanguage;
 $(function() {
   $(".panel-body").hide();
   $(".panel-body:first").show();
+  $(".nextbtn").hide();
+  $("input:radio").click(function() {
+    $(this).parent().parent().siblings(".nextbtn").show();
+  });
   $(".nextbtn").click(function() {
     $(this).parent().hide();
     $(this).parent().next(".panel-body").show();
