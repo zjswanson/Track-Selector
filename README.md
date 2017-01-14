@@ -5,18 +5,18 @@
 
 ## Description
 
-_{This is a detailed description of your application. Its purpose and usage.  Give as much detail as needed to explain what the application does, and any other information you want users or other developers to have. }_
+_This is a tool to help new Epicodus students select the best course of study.  It advises based on the type of work environment they are looking for, and the type of projects they find interesting._
 
 ## Setup/Installation Requirements
 
-* _Clone repository from GitHub and run index.html from any browser.  Enjoy_
-*_Additionally hosted on Github through gh-pages.  view at: https://zjswanson.github.io/Track-Selector/_
+* _Clone repository from GitHub and run index.html from any browser.
+Additionally, the site is hosted on Github through gh-pages.  view at: https://zjswanson.github.io/Track-Selector/_
 
 
 
 ## Known Bugs
 
-_This code is beautiful and perfect_
+_No known bugs, not enough functionality to bug up severely._
 
 ## Support and contact details
 
@@ -28,6 +28,6 @@ _Written in HTML, CSS, and JavaScript using the Bootstrap and jQuery libraries_
 
 ### License
 
-*right retained under the MIT License.*
+*rights retained under the MIT License.*
 
 Copyright (c) 2017 **_Zach Swanson_**
