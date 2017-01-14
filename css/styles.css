@@ -1,9 +1,18 @@
 .jumbotron {
-  background-color: rgba(0,179,180,.5);
+  background-color: rgba(0,179,180,1);
 }
 
 .panel-default > .panel-heading {
-  background-color: rgba(0,179,180,.5);
+  background-color: rgba(0,179,180,1);
+}
+
+.overbtn {
+  background-color: rgba(0,179,180,1);
+  text-align: center;
+}
+
+#submitbtn {
+  float: right;
 }
 
 body {

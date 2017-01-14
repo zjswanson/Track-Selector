@@ -1,5 +1,5 @@
 // decision tree logic
-// question 1-3 are to determine if the user prefers to work for a large or small organization.  if yes, they increment preferBig.
+// question 1-3 are to determine if the user prefers to work for a large or small organization.
 // Questions 4-5, respectively, refine which language to use in their preferred org size
 
 var checkSize = function(q1,q2,q3) {
@@ -19,6 +19,7 @@ var prevQuestion = function() {
 };
 
 
+
 // User interface
 
 $(function() {
@@ -33,6 +34,15 @@ $(function() {
     nextQuestion();
     $(".question"+activeQuestion).show();
   });
+  $(".prevbtn").click(function() {
+    $(".question"+activeQuestion).hide();
+    prevQuestion();
+    $(".question"+activeQuestion).show();
+  });
+  $(".overbtn").click(function() {
+    location.reload();
+  });
+
   $("form#quiz").submit(function(event) {
     event.preventDefault();
     $("#displaypane").find(".panel-body").hide();
@@ -45,9 +55,6 @@ $(function() {
       var preferLanguage = $("input:radio[name=question5]:checked").val();
     }
     $("."+preferLanguage).show();
+    $(".overbtn").show(500);
   });
-// to add to submit: hide next button, add start over button
-
-
-
 });

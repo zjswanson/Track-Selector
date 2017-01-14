@@ -10,8 +10,7 @@ _{This is a detailed description of your application. Its purpose and usage.  Gi
 ## Setup/Installation Requirements
 
 * _Clone repository from GitHub and run index.html from any browser.  Enjoy_
-*_Additionally hosted on Github through gh-pages.  view at :
-_
+*_Additionally hosted on Github through gh-pages.  view at: https://zjswanson.github.io/Track-Selector/_
 
 
 
